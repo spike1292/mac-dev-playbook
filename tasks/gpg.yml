@@ -1,3 +1,3 @@
 - name: Run .gpg dotfiles.
-  command: ". {{ dotfiles_repo_local_destination }}/.gpg-setup.bash"
+  command: "{{ dotfiles_repo_local_destination }}/.gpg-setup.bash"
   changed_when: false

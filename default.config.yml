@@ -22,6 +22,7 @@ dockitems_remove:
   - Numbers
   - Books
   - Messages
+  - Photos
 dockitems_persist:
 - name: "Safari"
   path: "/Applications/Safari.app/"
@@ -42,16 +43,16 @@ dockitems_persist:
   path: "/Applications/iTerm.app/"
   pos: 6
 - name: "Visual Studio Code"
-  path: "/Applications/Visual%20Studio%20Code.app/"
+  path: "/Applications/Visual Studio Code.app/"
   pos: 7
 - name: "Slack"
-  path: "/Applications/Slack.app/	"
+  path: "/Applications/Slack.app/"
   pos: 8
 - name: "Microsoft Teams"
-  path: "/Applications/Microsoft%20Teams.app/"
+  path: "/Applications/Microsoft Teams.app/"
   pos: 9
 - name: "Spotify"
-  path: "	/Applications/Spotify.app/"
+  path: "/Applications/Spotify.app/"
   pos: 10
 - name: "TIDAL"
   path: "/Applications/TIDAL.app/"
@@ -82,6 +83,7 @@ homebrew_installed_packages:
   - git
   - node
   - openjdk@17
+  - python@3.9
   - nvm
   - pyenv
   - rbenv
@@ -102,6 +104,7 @@ homebrew_taps:
   - homebrew/cask
   - homebrew/cask-fonts
   - homebrew/services
+  - homebrew/cask-versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -118,6 +121,7 @@ homebrew_cask_apps:
   - licecap
   - slack
   - cyberduck
+  - visual-studio-code
   - microsoft-teams
   - microsoft-office
   - microsoft-edge
@@ -137,6 +141,7 @@ mas_installed_apps:
   - { id: 1440147259, name: "AdGuard for Safari" }
   - { id: 1451685025, name: "WireGuard" }
   - { id: 497799835, name: "Xcode" }
+  - { id: 1569813296, name: "1Password for Safari" }
 mas_email: "spike1292@gmail.com"
 mas_password: ""
 mas_signin_dialog: false
@@ -171,5 +176,5 @@ sublime_package_control: []
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: 
-  - ssh
-  - gpg
+  # - tasks/ssh.yml
+  # - tasks/gpg.yml

@@ -1,3 +1,3 @@
 - name: Run .ssh dotfiles.
-  command: ". {{ dotfiles_repo_local_destination }}/.ssh-setup.bash"
+  command: "{{ dotfiles_repo_local_destination }}/.ssh-setup.bash"
   changed_when: false

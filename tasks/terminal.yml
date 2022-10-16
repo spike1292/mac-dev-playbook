@@ -14,12 +14,12 @@
   # when: "'One-Dark' not in terminal_theme.stdout"
 
 - name: Ensure custom Terminal profile is added.
-  command: open /tmp/One-Dark.terminal
+  command: open /tmp/One-Dark.itermcolors
   changed_when: false
   # when: "'One-Dark' not in terminal_theme.stdout"
 
 - name: Setup oh-my-zsh with p10k
-  command: ". {{ dotfiles_repo_local_destination }}/.zsh-setup.bash"
+  command: "{{ dotfiles_repo_local_destination }}/.zsh-setup.bash"
   changed_when: false
 
 - name: Replace zshrc with zshrc.p10k
