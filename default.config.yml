@@ -177,5 +177,5 @@ sublime_package_control: []
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: 
-  # - tasks/ssh.yml
+  - tasks/ssh.yml
   # - tasks/gpg.yml
