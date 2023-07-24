@@ -109,22 +109,30 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - displaylink
+  - iterm2
   - 1password
   - cleanmymac
+  - backblaze
   - docker
   - dropbox
   - firefox-developer-edition
   - google-chrome
+  - gpg-suite
   - moom
   - slack
   - cyberduck
+  - visual-studio-code
+  - microsoft-teams
+  - microsoft-office
   - microsoft-edge
   - spotify
   - tidal
   - font-fira-code
   - font-sauce-code-pro-nerd-font
+  - keybase
   - caffeine
+  - steam
+  - lens
   - citrix-workspace
   - notion
 
@@ -169,5 +177,5 @@ sublime_package_control: []
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: 
-  - tasks/ssh.yml
+  # - tasks/ssh.yml
   # - tasks/gpg.yml
