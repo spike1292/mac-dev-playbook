@@ -119,7 +119,6 @@ homebrew_cask_apps:
   - google-chrome
   - gpg-suite
   - moom
-  - licecap
   - slack
   - cyberduck
   - visual-studio-code
@@ -135,6 +134,7 @@ homebrew_cask_apps:
   - steam
   - lens
   - citrix-workspace
+  - notion
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
@@ -177,5 +177,5 @@ sublime_package_control: []
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: 
-  - tasks/ssh.yml
+  # - tasks/ssh.yml
   # - tasks/gpg.yml
