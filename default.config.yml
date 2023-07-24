@@ -109,15 +109,15 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - displaylink
-  - 1password
+ # - displaylink
+  #- 1password
   - cleanmymac
-  - docker
+  #- docker
   - dropbox
   - firefox-developer-edition
   - google-chrome
   - moom
-  - slack
+  #- slack
   - cyberduck
   - microsoft-edge
   - spotify
