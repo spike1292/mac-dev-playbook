@@ -23,6 +23,7 @@ dockitems_remove:
   - Books
   - Messages
   - Photos
+  - Freeform
 dockitems_persist:
 - name: "Safari"
   path: "/Applications/Safari.app/"
