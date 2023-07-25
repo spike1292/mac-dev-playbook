@@ -24,6 +24,8 @@ dockitems_remove:
   - Messages
   - Photos
   - Freeform
+  - Notes
+  - "E.ON App Store"
 dockitems_persist:
 - name: "Safari"
   path: "/Applications/Safari.app/"
@@ -37,7 +39,7 @@ dockitems_persist:
 - name: "Calendar"
   path: "/System/Applications/Calendar.app/"
   pos: 4
-- name: "System Preferences"
+- name: "System Settings"
   path: "/Applications/Microsoft Edge.app/"
   pos: 5
 - name: "iTerm"
@@ -99,34 +101,42 @@ homebrew_installed_packages:
   - zsh-autosuggestions
   - zsh-completions
   - zsh-history-substring-search
+  - defaultbrowser
 
 homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
   - homebrew/cask-fonts
   - homebrew/services
   - homebrew/cask-versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
- # - displaylink
-  #- 1password
+  - iterm2
+  - 1password
   - cleanmymac
-  #- docker
+  - backblaze
+  - docker
   - dropbox
   - firefox-developer-edition
   - google-chrome
+  - gpg-suite
   - moom
-  #- slack
+  - slack
   - cyberduck
+  - visual-studio-code
+  - microsoft-teams
+  - microsoft-office
   - microsoft-edge
   - spotify
   - tidal
   - font-fira-code
   - font-sauce-code-pro-nerd-font
+  - keybase
   - caffeine
+  - steam
+  - lens
   - citrix-workspace
   - notion
+  - whatsapp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
@@ -169,5 +179,5 @@ sublime_package_control: []
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: 
-  - tasks/ssh.yml
+  # - tasks/ssh.yml
   # - tasks/gpg.yml

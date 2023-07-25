@@ -1,21 +1,17 @@
 ---
 
-dotfiles_repo: https://github.com/spike1292/dotfiles.git
-dotfiles_repo_accept_hostkey: true
 dotfiles_repo_version: essent
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 
-homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - displaylink
-  - 1password
+  # - displaylink
+  # - 1password
   - cleanmymac
-  - docker
+  # - docker
   - dropbox
   - firefox-developer-edition
   - google-chrome
   - moom
-  - slack
+  # - slack
   - cyberduck
   - microsoft-edge
   - spotify
@@ -25,6 +21,7 @@ homebrew_cask_apps:
   - caffeine
   - citrix-workspace
   - notion
+  - whatsapp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
@@ -32,10 +29,10 @@ mas_installed_apps:
   - { id: 1440147259, name: "AdGuard for Safari" }
   - { id: 1451685025, name: "WireGuard" }
   - { id: 497799835, name: "Xcode" }
-  - { id: 1569813296, name: "1Password for Safari" }
-  #- { id: '', name: "Bitwarden" }
+  # - { id: 1569813296, name: "1Password for Safari" }
+  # - { id: '', name: "Bitwarden" }
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: 
-  - tasks/ssh.yml
+  # - tasks/ssh.yml
   # - tasks/gpg.yml
